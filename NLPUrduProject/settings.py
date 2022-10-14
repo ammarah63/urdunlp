@@ -113,6 +113,8 @@ USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    'https://nlpurduproject.herokuapp.com',
+    'https://path-to-bucket.s3.amazonaws.com/manifest.json'
 ]
 
 # Static files (CSS, JavaScript, Images)
