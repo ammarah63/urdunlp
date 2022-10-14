@@ -1,17 +1,19 @@
 {
-  "files": {
-    "main.css": "/static/css/main.7a4793d9.css",
-    "main.js": "/static/js/main.315880aa.js",
-    "static/js/787.c4f40e06.chunk.js": "/static/js/787.c4f40e06.chunk.js",
-    "static/media/LOGO.png": "/static/media/LOGO.95b5fa8414c90d33f8c5.png",
-    "static/media/bahria_logo.png": "/static/media/bahria_logo.2c99c7af29533c776a5e.png",
-    "index.html": "/index.html",
-    "main.7a4793d9.css.map": "/static/css/main.7a4793d9.css.map",
-    "main.315880aa.js.map": "/static/js/main.315880aa.js.map",
-    "787.c4f40e06.chunk.js.map": "/static/js/787.c4f40e06.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.7a4793d9.css",
-    "static/js/main.315880aa.js"
-  ]
+  "main.css": "/static/css/main.746f5b7b.chunk.css",
+  "main.js": "/static/js/main.af0f663b.chunk.js",
+  "main.js.map": "/static/js/main.af0f663b.chunk.js.map",
+  "static/js/1.db344110.chunk.js": "/static/js/1.db344110.chunk.js",
+  "static/js/1.db344110.chunk.js.map": "/static/js/1.db344110.chunk.js.map",
+  "static/css/2.08c0423e.chunk.css": "/static/css/2.08c0423e.chunk.css",
+  "static/js/2.7d78b9ea.chunk.js": "/static/js/2.7d78b9ea.chunk.js",
+  "static/js/2.7d78b9ea.chunk.js.map": "/static/js/2.7d78b9ea.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.bf8f8d4d.js",
+  "runtime~main.js.map": "/static/js/runtime~main.bf8f8d4d.js.map",
+  "static/media/LOGO.png": "/static/media/LOGO.a8d99974.png",
+  "static/media/bahria_logo.png": "/static/media/bahria_logo.a40e4ca7.png",
+  "static/css/main.746f5b7b.chunk.css.map": "/static/css/main.746f5b7b.chunk.css.map",
+  "static/css/2.08c0423e.chunk.css.map": "/static/css/2.08c0423e.chunk.css.map",
+  "index.html": "/index.html",
+  "precache-manifest.58b0dc54555726bf06eebdfca7fd5731.js": "/precache-manifest.58b0dc54555726bf06eebdfca7fd5731.js",
+  "service-worker.js": "/service-worker.js"
 }
