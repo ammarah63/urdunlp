@@ -18,13 +18,13 @@ from django.urls import path, include, re_path
 from django.conf.urls.static import static
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-from . import views
+#from . import views
 from django.views.generic import TemplateView
 
 urlpatterns = [
     path('NLPapp/', include('NLPapp.urls')),
     path('api-auth/', include('rest_framework.urls')),
-    path('', views.index ,name='index'),
+    #path('', views.index ,name='index'),
     path('api/', include('NLPapp.api.urls')), 
     path("admin/", admin.site.urls),
     re_path('.*', TemplateView.as_view(template_name="index.html"))
