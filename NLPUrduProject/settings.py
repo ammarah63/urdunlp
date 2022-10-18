@@ -14,11 +14,6 @@ from pathlib import Path
 import os
 
 
-import mimetypes 
-mimetypes.add_type("text/css", ".css", True)
-mimetypes.add_type ("text/css",".css", True)  
-mimetypes.add_type ("text/html", ".html", True)  
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -30,9 +25,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-ag0!b50ixu$f2r*0k1gp=q(#19-99=@22#lpm==m5rt%kt7y@="
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["nlpurduproject.herokuapp.com"]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -66,7 +61,7 @@ ROOT_URLCONF = "NLPUrduProject.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        'DIRS': [os.path.join(BASE_DIR,'build')],
+        'DIRS': [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -120,6 +115,8 @@ USE_TZ = True
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     'https://nlpurduproject.herokuapp.com',
+    'https://evening-bayou-33068.herokuapp.com',
+    'http://evening-bayou-33068.herokuapp.com'
   
 ]
 
@@ -141,10 +138,6 @@ REST_FRAMEWORK = {
 STATIC_URL = 'static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-STATICFILES_DIR=[os.path.join(BASE_DIR, 'build/static')]
-#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-#STATICFILES_STORAGE='whitenoise.django.GzipManifestStaticFilesStorage'
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 
 
@@ -152,7 +145,3 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
-
-import dj_database_url
-prod_db=dj_database_url.config(conn_max_age=500)
-DATABASES["default"].update(prod_db)

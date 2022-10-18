@@ -1,2 +1,1 @@
-release: python manage.py migrate
-web: gunicorn NLPUrduProject.wsgi --log-file -
+web: waitress-serve --port=$PORT NLPUrduProject.wsgi:application
