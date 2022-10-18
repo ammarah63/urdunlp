@@ -28,8 +28,8 @@ urlpatterns = [
     #path('', views.index ,name='index'),
     path('api/', include('NLPapp.api.urls')), 
     path("admin/", admin.site.urls),
-    #re_path('.*', TemplateView.as_view(template_name='index.html'))
-    re_path('.*', index)
+    re_path('.*', TemplateView.as_view(template_name='index.html'))
+    #re_path('.*', index)
 ]
 #urlpatterns += staticfiles_urlpatterns() # Added this
 if settings.DEBUG:
