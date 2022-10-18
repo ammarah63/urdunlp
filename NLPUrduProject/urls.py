@@ -20,6 +20,7 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 #from . import views
 from django.views.generic import TemplateView
+from .views import index
 
 urlpatterns = [
     path('NLPapp/', include('NLPapp.urls')),
@@ -27,7 +28,8 @@ urlpatterns = [
     #path('', views.index ,name='index'),
     path('api/', include('NLPapp.api.urls')), 
     path("admin/", admin.site.urls),
-    re_path('.*', TemplateView.as_view(template_name='index.html'))
+    #re_path('.*', TemplateView.as_view(template_name='index.html'))
+    re_path('.*', index)
 ]
 urlpatterns += staticfiles_urlpatterns() # Added this
 if settings.DEBUG:
