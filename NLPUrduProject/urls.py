@@ -31,7 +31,7 @@ urlpatterns = [
     #re_path('.*', TemplateView.as_view(template_name='index.html'))
     re_path('.*', index)
 ]
-urlpatterns += staticfiles_urlpatterns() # Added this
+#urlpatterns += staticfiles_urlpatterns() # Added this
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
     

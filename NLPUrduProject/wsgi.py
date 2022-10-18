@@ -19,7 +19,7 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "NLPUrduProject.settings")
 
 application = get_wsgi_application()
 BASE_DIR =Path(__file__).resolve().parent.parent
-application = WhiteNoise(application, root=os.path.join(BASE_DIR,'build/static'))
+application = WhiteNoise(application, root=os.path.join(BASE_DIR,'frontend/build/static'))
 
 
 

@@ -66,7 +66,7 @@ ROOT_URLCONF = "NLPUrduProject.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        'DIRS': [os.path.join(BASE_DIR,'build')],
+        'DIRS': [os.path.join(BASE_DIR,'frontend/build')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -141,7 +141,7 @@ REST_FRAMEWORK = {
 STATIC_URL = 'static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
-STATICFILES_DIR=[os.path.join(BASE_DIR, 'build/static')]
+STATICFILES_DIR=[os.path.join(BASE_DIR, 'frontend/build/static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 #STATICFILES_STORAGE='whitenoise.django.GzipManifestStaticFilesStorage'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
