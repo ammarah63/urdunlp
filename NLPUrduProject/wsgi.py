@@ -10,16 +10,12 @@ https://docs.djangoproject.com/en/4.1/howto/deployment/wsgi/
 import os
 
 from django.core.wsgi import get_wsgi_application
-from whitenoise import WhiteNoise
-from pathlib import Path
 
-from NLPUrduProject.settings import BASE_DIR
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "NLPUrduProject.settings")
 
 application = get_wsgi_application()
-BASE_DIR =Path(__file__).resolve().parent.parent
-application = WhiteNoise(application, root=os.path.join(BASE_DIR,'build/static'))
+
 
 
 
